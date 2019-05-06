@@ -18,3 +18,6 @@ https://pdfs.semanticscholar.org/5b5c/a878c534aee3882a038ef9e82f46e102131b.pdf
 https://blogs.oracle.com/meena/finding-similarity-between-text-documents
 
 https://sites.temple.edu/tudsc/2017/03/30/measuring-similarity-between-texts-in-python/
+
+### Hindi tokenizer
+https://github.com/taranjeet/hindi-tokenizer
