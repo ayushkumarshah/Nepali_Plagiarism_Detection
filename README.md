@@ -1,7 +1,7 @@
 # Nepali_Plagiarism_Detection
 A program to detect plagiarism in a pair of Nepali texts.
 
-Useful links for Nepali Plagiarism Detection
+## Useful links for Nepali Plagiarism Detection
 
 https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50
 
