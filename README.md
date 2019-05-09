@@ -21,3 +21,6 @@ https://sites.temple.edu/tudsc/2017/03/30/measuring-similarity-between-texts-in-
 
 ### Hindi tokenizer
 https://github.com/taranjeet/hindi-tokenizer
+
+### Nepali text preprocessing
+http://159.203.189.74/pre-processing/
