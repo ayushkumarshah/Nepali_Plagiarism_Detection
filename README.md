@@ -24,3 +24,9 @@ https://github.com/taranjeet/hindi-tokenizer
 
 ### Nepali text preprocessing
 http://159.203.189.74/pre-processing/
+
+https://www.academia.edu/36298067/Nepali_News_Classification_using_Na%C3%AFve_Bayes_Support_Vector_Machines_and_Neural_Networks
+
+https://www.researchgate.net/publication/271285232_A_Hybrid_Algorithm_for_Stemming_of_Nepali_Text
+
+http://ww.panl10n.net/english/final%20reports/pdf%20files/Nepal/NEP06.pdf (Stemming)
