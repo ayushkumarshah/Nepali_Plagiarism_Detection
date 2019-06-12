@@ -1,0 +1,316 @@
+10 SFX 1 आ C N
+ा ्
+8 SFX 2 दो DO Y
+दो .
+ँदो .
+3 SFX 1 ले PPG N
+ले .
+1 SFX 1 हरू HRU N
+हरू .
+2 SFX 1 लाई PPG N
+लाई .
+4 SFX 1 को PPG N
+को .
+5 SFX 1 का PPG N
+का .
+6 SFX 1 की PPG N
+की .
+7 SFX 2 छ CHA N
+ँछ .
+छ .
+82 SFX 1 छ CHA Y
+न्छ .
+9 SFX 1 बाट PPG N
+बाट .
+
+11 SFX 3 एका EKO Y
+ाएका ाउ
+ेका ्
+एका .
+
+12 SFX 1 न N N
+न .
+13 SFX 3 छु CHU N
+ँछ .
+न्छु .
+छु .
+14 SFX 2 छे प N
+ँछ .
+छे .
+15 SFX 2 छौ CHAU N
+ँछौ .
+छौ .
+16 SFX 1 ने NE N
+ने .
+
+17 SFX 1 यो YO N
+यो .
+
+18 SFX 2 दा DA Y
+ँदा .
+दा .
+
+19 SFX 2 दै DAI N
+ँदै .
+दै .
+20 SFX 1 पालिका पालिका N
+पालिका .
+
+21 SFXX 2 आइ AE N
+ाइ 2 ँ > ्
+ाइ 1 ँ 1|> ा|्
+
+22 SFX 1 नु NU N
+नु .
+23 SFX 4 ए E N
+एँ .
+ए .
+ेँ ्
+े ्
+
+24 SFXX 2 आउ C N
+उ 1 ाउ .
+ाउ
+
+25 SFX 1 आउ C N
+उ . 
+
+26 SFX 2 छौँ CWN N
+न्छौँ .
+छौँ .
+
+27 SFX 1 छेस् CHES N
+छेस् .
+80 SFX 1 छेस् CHES Y
+न्छेस् .
+28 SFX 1 छस् CWN N
+छस् .
+79 SFX 1 छस् CWN N
+न्छस् .
+
+29 SFX 1 छौ CWN N
+छौ .
+78 SFX 1 छौ CWN Y
+न्छौ .
+
+30 SFX 1 छ्यौ CWN N
+छ्यौ .
+
+77 SFX 1 छयौ CWN Y
+न्छ्यौ .
+
+31 SFX 2 छन् CWN N
+ँछन् .
+छन् .
+
+32 SFX 1 छिन् CWN N
+छिन् .
+81 SFX 1 छिन् CWN Y
+न्छिन् .
+33 SFX 2 थेँ THN N
+न्थेँ .
+थेँ .
+
+34 SFX 1 तै DAI Y
+तै .
+
+35 SFX 2 थ्यौँ TWN N
+न्थ्यौँ .
+थ्यौँ .
+
+36 SFX 2 थ्यौ TW N
+न्थ्यौ .
+थ्यौ .
+
+37 SFX 2 थिन् THIN N
+न्थिन् .
+थिन् .
+
+38 SFX 2 थे THE N
+न्थे .
+थे .
+
+39 SFX 2 एस् ES N
+एस् .
+ेस् ्
+
+40 SFX 2 औं AUN N
+औं .
+ौं ्
+
+41 SFX 2 ओस् OS N
+ओस् .
+ोस् ्
+
+42 SFX 2 उन् UUN N
+उन् .
+ुन् ्
+
+43 SFX 2 एन् EN N
+एन् .
+ेन् ्
+
+44 SFX 1 यौं YWN N
+यौं .
+
+45 SFX 2 इस् IS N
+इस् .
+िस् ्
+
+46 SFX 1 यौ YW N
+यौ .
+
+47 SFX 2 औंला NLA N
+औंला .
+ौंला ्
+
+48 SFX 1 ला LA N
+ला .
+
+49 SFX 1 ली LI Y
+ली .
+
+50 SFX 1 लिन् LIN N
+लिन् .
+
+51 SFX 1 लान् LAN N
+लान् .
+
+52 SFX 1 लास् LAS N
+लास् .
+
+53 SFX 1 लिस् LIS N
+लिस् .
+
+54 SFX 1 होस् HOS N
+होस् .
+
+55 SFX 1 माथी PPG N
+माथी .
+
+56 SFX 1 तर्फ PPG N
+तर्फ .
+
+57 SFX 1 मा PPG N
+मा .
+
+58 SFX 1 स्थित PPG N
+स्थित .
+
+59 SFX 1 मुनि PPG N
+मुनि .
+
+60 SFX 2 उँ UN N
+उँ .
+ुँ ्
+
+61 SFX 1 ई I N
+ी ्
+
+62 SFX 2 एर ER N
+एर .
+ेर ्
+
+63 SFX 3 इ i N
+आइ आउ
+ाइ ाउ
+ि ्
+
+64 SFX 1 नो NO Y
+्नो ू
+
+65 SFX 1 पर्छ PPG N
+पर्छ .
+66 SFX 1 तुल्य PPG N
+तुल्य .
+
+67 SFX 1 साथ PPG N
+साथ .
+
+68 SFX 1 नन् NEG N
+नन् .
+
+69 SFX 1 चाँहि EMP N
+चाँहि .
+
+70 SFX 1 इन IN N
+इन .
+
+71 SFX 1 अनुसार PPG N
+अनुसार .
+
+72 SFX 2 इयाँ IYA N
+ियाँ .
+िया .
+
+73 SFX 1 चाहीँ EMP N
+चाहीँ .
+
+74 SFX 1 मात्र PPG N
+मात्र .
+
+75 SFX 1 झैँ PPG N
+झैँ .
+
+76 SFX 1 छन् CWN Y
+न्छन् .
+
+83 SFX 1 ऐ AE N
+ै ्
+
+84 SFX 1 कै EMP Y
+कै .
+
+85 SFX 1 मध्ये PPG Y
+मध्ये .
+
+86 SFX 1 ता TA Y
+ता .
+87 SFX 1 सम्म PPG N
+सम्म .
+88 SFX 1 ए AE Y
+ाए ाउ
+89 SFX 3 एको EKO Y
+ाएको ाउ
+ेको ्
+एको .
+90 SFX 1 शील SIL N
+शील .
+91 SFX 1 सुकै SKAI Y
+सुकै .
+92 SFX 1 सार ADJN Y
+सार .
+93 SFX 1 ना NA Y
+ना .
+94 SFX 3 आलु ALU N
+यालु या
+डालु डा
+ालु .
+95 SFX 1 ई I N
+ई .
+96 SFX 2 इन्जेल INJL N
+िन्जेल ्
+इन्जेल .
+97 SFX 2 उन्जेल UNJL N
+ुन्जेल ्
+उन्जेल उ
+
+98 SFX 2 ईन् IN N
+ईन् .
+ीन् ्
+99 SFX 1 ौँ AUN N
+ौँ ्
+100 SFX 2 उँला UNLA N
+उँला .
+ुँला ्
+101 SFX 1 ओ O N
+ओ .
+102 SFX 1 इलो ilo N
+िलो .
+103 SFX 1 आडी Adi N
+ाडी .
+104 SFX 1 इक Ika N
+िक .
+
+9998 SFX 1 अ CN N
+. ्
