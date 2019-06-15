@@ -6,6 +6,7 @@ import numpy as np
 import operator
 from stemmer import Stemmer
 st=Stemmer()
+from decimal import Decimal
 
 def tokenize_sentence(text):
     sentences=re.split('(?<=[।?!]) +', text)
@@ -280,8 +281,12 @@ def similarity(eg1, eg2):
     global Docs
     Docs = [tokens1, tokens2]
     TFIDF_Vector = create_vector()
-    jsim = get_jaccard_sim(tokens1, tokens2)
-    csim = get_cosine_sim(TFIDF_Vector[0], TFIDF_Vector[1])
+    jsim =Decimal( get_jaccard_sim(tokens1, tokens2))
+    jsim=round(jsim*100,2)
+    
+    csim = Decimal(get_cosine_sim(TFIDF_Vector[0], TFIDF_Vector[1]))
+    csim=round(csim*100,2)
+
     return (jsim, csim)
 
 
@@ -304,7 +309,7 @@ def get_final_list(basepath):
     dic = {}
     dic_cosim = {}
     for com in comb:
-        between = "between" + com[0].replace(basepath1,
+        between = "between " + com[0].replace(basepath1,
                                              '') + ' and ' + com[1].replace(
             basepath1, '')
         sim = similarity(read(com[0]), read(com[1]))
