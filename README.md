@@ -30,3 +30,5 @@ https://www.academia.edu/36298067/Nepali_News_Classification_using_Na%C3%AFve_Ba
 https://www.researchgate.net/publication/271285232_A_Hybrid_Algorithm_for_Stemming_of_Nepali_Text
 
 http://ww.panl10n.net/english/final%20reports/pdf%20files/Nepal/NEP06.pdf (Stemming)
+
+https://pdfs.semanticscholar.org/bd9c/b79102a9a7177fa925d0aa3dfdbff4405ebc.pdf (Stemming)
