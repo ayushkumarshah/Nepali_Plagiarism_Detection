@@ -44,23 +44,23 @@ def stem(tokens):
     for token in tokens:
         p="yes"
         i,k = 0,0 #no. of suffix and prefix found
-        print("\nUnstemmed input token"+str(count)+":"+token)
+        #print("\nUnstemmed input token"+str(count)+":"+token)
         orig_token=token
         end=False
         while (not end):
-            print("Checking root word or not")
+            #print("Checking root word or not")
             if (st.isRoot(token) or( st.isAltRoot(token) and i>0)):
-                print("comdition1")
+                #print("comdition1")
                 if( st.isAltRoot(token) and i>0):
                     st.setRoot(st.getAltRoot(token))
 
                 else:
                     st.setRoot(token)
-                    print("\nRoot word found:"+token)
+                    #print("\nRoot word found:"+token)
                 end=True
 
             elif (st.isRoot(token + "\u094d")) :
-                print("comdition2")
+                #print("comdition2")
 
                 i+=1
                 st.setSMorph_number(i)
@@ -69,38 +69,38 @@ def stem(tokens):
 
 
             elif (token.endswith("\u094d") and st.isRoot(token[:len(token)-1])):
-                print("comdition3")
+                #print("comdition3")
                 token=token[:len(token)-1]
                 st.setRoot(token)
 
             elif (st.suffixPresent(token,i)) :
-                print("comdition4")
+                #print("comdition4")
                 i+=1
                 st.setSMorph_number(i)
                 st.stripSuffix(token)
                 token = st.getRoot()
 
             elif (st.prefixPresent(token)) :
-                print("comdition5")
+                #print("comdition5")
                 k+=1
                 st.setPMorph_number(k)
                 st.stripPrefix(token)
                 token = st.getRoot()
 
             else:
-                print("\nRecombining suffix")
+                #print("\nRecombining suffix")
 
     #           if prefix and suffix present
                 if (k > 0 and i > 0) :
-                    print("comdition6:bot suffix and prefix found previously")
+                    #print("comdition6:bot suffix and prefix found previously")
 
                     a = st.getPMorph()
-                    print("PMorph:"+str(a))
+                    #print("PMorph:"+str(a))
                     for k1 in range(k,0,-1):
                         tmp = token
                         for l in range(i,0,-1):
                             tm = st.generateWord(tmp, l)
-                            print("generated word: "+tm)
+                            #print("generated word: "+tm)
 
                             if (st.isRoot(tm) or ( st.isAltRoot(tm) and i>0)):
                                 bk = 1
@@ -131,7 +131,7 @@ def stem(tokens):
 
 
                 else:
-                    print("comdition7:unrecognized")
+                    #print("comdition7:unrecognized")
 
                     st.setRoot("unrecognized")
 
@@ -164,12 +164,14 @@ def stem(tokens):
         if(st.getRoot()==("unrecognized")):
             unrecog.append(orig_token)
             new.append(orig_token)
-            print("\nfinal token (couldnt stem):"+orig_token)
+            #print("\nfinal token (couldnt stem):"+orig_token)
 
         else:
             new.append(st.getRoot())
-            print("\nfinal stemmed token:"+st.getRoot())
+            #print("\nfinal stemmed token:"+st.getRoot())
         count+=1
+#     print("Words after stemming")
+#     print(new)
     return new
 
 def preprocess(text):

@@ -140,7 +140,7 @@ class Stemmer:
 
     # get the alternate root
     def getAltRoot(self,word):
-        #print("\nalternate root found:"+self.alt_root.get(word))
+        print("\nalternate root found:"+self.alt_root.get(word))
 
         return self.alt_root.get(word)
 
@@ -234,7 +234,7 @@ class Stemmer:
         self.suffix_rule = suffix_rule
 
     def generateWord(self,token, mn):
-        #print("\ngenerating word")
+        print("\ngenerating word")
         q =token
         t = str(self.smorph_rulenum[mn])
         a = str(self.suffix_del.get(t + str(self.subsmorph[mn])))
@@ -256,7 +256,7 @@ class Stemmer:
         return tmpgen
 
     def isASuffix(self,word):
-        #print("\nVerbs ending with halanta")
+        print("\nVerbs ending with halanta")
         word+="\u094d"
         c = 9998
         i = self.getSMorph_number()
@@ -272,13 +272,13 @@ class Stemmer:
             return False
 
     def suffixPresent(self,string, o):
-        #print("\nChecking suffix present or not\n")
+        print("\nChecking suffix present or not\n")
         present = "no"
         for rn in range(1,len(string)):
             tmp = string[rn:]
-            #print ("tmp_suffix:"+tmp)
+            print ("tmp_suffix:"+tmp)
             if (tmp==(self.ht_suffix.get(tmp))):
-                #print("\nsuffix found")
+                print("\nsuffix found")
                 if (self.parsetwo == 1) :
                     if (self.isRepeat(str(self.suffix_ht.get(tmp)))):
                         for j in range(rec):
@@ -295,43 +295,43 @@ class Stemmer:
                     self.setRuleNumber(str(int(self.suffix_ht.get(tmp))))
                     self.repsuff[rec] = tmp
                     return True
-        #print("\nsuffix not found")
+        print("\nsuffix not found")
         return False
 
     def prefixPresent(self,string) :
-        #print("\nChecking prefix present or not\n")
+        print("\nChecking prefix present or not\n")
         for rn in range(len(string)):
             tmp = string[:rn + 1]
-            #print ("tmp_prefix:"+tmp)
+            print ("tmp_prefix:"+tmp)
             if (tmp==(self.ht_prefix.get(tmp))) :
-                #print("\nprefix found")
+                print("\nprefix found")
                 self.setRuleNumber(str(int(self.prefix_tm.get(tmp))))
                 return True
 
-        #print("\nprefix not found")
+        print("\nprefix not found")
         return False
 
     def stripPrefix(self,word):
-        #print("\nStripping prefix")
+        print("\nStripping prefix")
         w = word
         b = int(str(self.pre_sub_rule.get(str(self.getRuleNumber()))))
         rulenumber = str(self.getRuleNumber())
-        #print("rule:"+rulenumber)
+        print("rule:"+rulenumber)
         self.setPMorph(str(self.prefix_morph.get(rulenumber)), self.getPMorph_number())
         self.setPDes(str(self.prefix_desc.get(rulenumber)), self.getPMorph_number())
         if (self.prefix_type.get(rulenumber)==("PFX")) :
             for s in range(b):
-                #print("\nPrefix_del:"+str(self.prefix_del.get(rulenumber + str(s))))
+                print("\nPrefix_del:"+str(self.prefix_del.get(rulenumber + str(s))))
                 if (word.startswith(str(self.prefix_del.get(rulenumber + str(s))))):
                     tmp = str(self.prefix_del.get(rulenumber + str(s)))
                     w=w.replace(tmp, "")
-                    #print("\nfinal stiped word: "+w)
+                    print("\nfinal stiped word: "+w)
 
                     break
         self.setRoot(str(w))
 
     def stripSuffix(self,word):
-        #print("\nStripping suffix")
+        print("\nStripping suffix")
         w = word
         b = int(str(self.suf_sub_rule.get(str(self.getRuleNumber()))))
         rulenumber = str(self.getRuleNumber())
@@ -339,22 +339,22 @@ class Stemmer:
         self.setSMorph_rulenum(self.getSMorph_number(), int(rulenumber))
         self.setSDes(str(self.suffix_desc.get(rulenumber)), self.getSMorph_number())
         if (self.suffix_type.get(rulenumber)==("SFX")) :
-            #print("rule:"+rulenumber)
+            print("rule:"+rulenumber)
             for s in range(b):
                 lengthw = len(w)
-                # #print("length:"+str(lengthw))
-                #print("\nSuffix_del:"+str(self.suffix_del.get(rulenumber + str(s))))
+                # print("length:"+str(lengthw))
+                print("\nSuffix_del:"+str(self.suffix_del.get(rulenumber + str(s))))
                 if (word.endswith(str(self.suffix_del.get(rulenumber + str(s))))):
                     self.setSubSMorph(s, self.getSMorph_number())
                     tmp1 = str(self.suffix_del.get(rulenumber + str(s)))
                     tmp2 = str(self.suffix_ins.get(rulenumber +str(s)))
-                    #print(tmp1+" "+tmp2)
+                    print(tmp1+" "+tmp2)
                     w=w.replace(tmp1, "")
                     if (tmp2!=(".")):
                         w+=tmp2
-                        #print("not_dot "+tmp2)
+                        print("not_dot "+tmp2)
 
-                    #print("\nfinal stiped word: "+w)
+                    print("\nfinal stiped word: "+w)
 
                     break;
             self.setRoot(str(w))
