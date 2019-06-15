@@ -19,7 +19,7 @@ def tokenize_word(sentences):
 
 def clean_text(words):
     punctuations=r',|\)|\(|\{|\}|\[|\]|\?|\!|।|\‘|\’|\“|\”|\:-|/|—|-'
-    numbers = r'[0-9o१२३४५६७८९]'
+    numbers = r'[0-9०o१२३४५६७८९]'
     words = [re.sub(numbers, '', i) for i in words]
     words = [re.sub(punctuations, '', i) for i in words]
     #Removing empty strings
