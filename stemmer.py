@@ -240,12 +240,12 @@ class Stemmer:
     def setSuffix_rule(self, suffix_rule):
         self.suffix_rule = suffix_rule
 
-    def generateWord(self,r1, mn):
+    def generateWord(self,token, mn):
         print("\ngenerating word")
-        q =r1
+        q =token
         t = str(self.smorph_rulenum[mn])
         a = str(self.suffix_del.get(t + str(self.subsmorph[mn])))
-        l = len(r1)
+        l = len(token)
         b = int(str(self.suf_sub_rule.get(t)))
         if (self.suffix_type.get(t)==("SFX")):
             for s in range(b):
@@ -302,6 +302,7 @@ class Stemmer:
                     self.setRuleNumber(str(int(self.suffix_ht.get(tmp))))
                     self.repsuff[rec] = tmp
                     return True
+        print("\nsuffix not found")
         return False
 
     def prefixPresent(self,string) :
@@ -313,6 +314,8 @@ class Stemmer:
                 print("\nprefix found")
                 self.setRuleNumber(str(int(self.prefix_tm.get(tmp))))
                 return True
+
+        print("\nprefix not found")
         return False
 
     def stripPrefix(self,word):
@@ -329,7 +332,7 @@ class Stemmer:
                 if (word.startswith(str(self.prefix_del.get(rulenumber + str(s))))):
                     tmp = str(self.prefix_del.get(rulenumber + str(s)))
                     w=w.replace(tmp, "")
-                    print("\nfinal: "+w)
+                    print("\nfinal stiped word: "+w)
 
                     break
         self.setRoot(str(w))
@@ -358,7 +361,7 @@ class Stemmer:
                         w+=tmp2
                         print("not_dot "+tmp2)
 
-                    print("\nfinal: "+w)
+                    print("\nfinal stiped word: "+w)
 
                     break;
             self.setRoot(str(w))
