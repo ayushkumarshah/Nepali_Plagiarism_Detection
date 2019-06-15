@@ -10,11 +10,11 @@ def browse_button():
     global filename
     filename= filedialog.askdirectory()
     canvas.create_text(200, 70, text=filename, font="Times 12 bold")
-    """final_list=interface.get_final_list(filename)
+    final_list=interface.get_final_list(filename)
     x = 0
     for i in final_list:
         canvas.create_text(280, 100+x, text=i, font="Times 10 bold")
-        x=x+20"""
+        x=x+20
 
 
     return filename

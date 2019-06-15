@@ -154,18 +154,19 @@ def get_final_list(basepath):
     for entry in os.listdir(basepath):
         if os.path.isfile(os.path.join(basepath, entry)):
             mylist.append(entry)
+    basepath1=basepath+'/'
 
     for i in range(0, len(mylist)):
-        path.append('D:/nlp_project/Nepali_Plagiarism_Detection/datasets/data/' + mylist[i])
+        path.append(basepath1 + mylist[i])
 
     from itertools import combinations
     comb = list(combinations(path, 2))
     dic = {}
     dic_cosim = {}
     for com in comb:
-        between = "between" + com[0].replace('D:/nlp_project/Nepali_Plagiarism_Detection/datasets/data/',
+        between = "between" + com[0].replace(basepath1,
                                              '') + ' and ' + com[1].replace(
-            'D:/nlp_project/Nepali_Plagiarism_Detection/datasets/data/', '')
+            basepath1, '')
         sim = similarity(read(com[0]), read(com[1]))
         dic[between] = sim
         dic_cosim[between] = sim[1]
