@@ -9,17 +9,17 @@ filename="filename"
 def browse_button():
     global filename
     filename= filedialog.askdirectory()
-    canvas.create_text(200, 70, text=filename, font="Times 12 bold")
+    canvas.create_text(600, 70, text=filename, font="Times 12 bold")
     final_list=interface.get_final_list(filename)
     x = 0
-    canvas.create_text(370, 110, text="Jacard                              Cosine", font="Purisa 10")
+    canvas.create_text(400, 110, text="Jacard, Cosine", font="Purisa 10")
 
     for i in final_list:
-        canvas.create_text(280, 150+x, text=i, font="Times 10 bold")
+        canvas.create_text(280, 150+x, text=i+"%", font="Purisa 10")
         x=x+20
     return filename
 
-canvas = Canvas(tk, width=600, height=600)
+canvas = Canvas(tk, width=1200, height=720)
 
 canvas.pack()
 button=Button(canvas,text="Choose the folder",width=30,command=browse_button)

@@ -282,10 +282,10 @@ def similarity(eg1, eg2):
     Docs = [tokens1, tokens2]
     TFIDF_Vector = create_vector()
     jsim =Decimal( get_jaccard_sim(tokens1, tokens2))
-    jsim=round(jsim*100,2)
-    
+    jsim=float(round(jsim*100,2))
+
     csim = Decimal(get_cosine_sim(TFIDF_Vector[0], TFIDF_Vector[1]))
-    csim=round(csim*100,2)
+    csim=float(round(csim*100,2))
 
     return (jsim, csim)
 
