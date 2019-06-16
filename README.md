@@ -1,6 +1,18 @@
 # Nepali_Plagiarism_Detection
 A program to detect plagiarism in a pair of Nepali texts.
 
+## Files info
+
+### To run the interface:
+Just run the main interface file i.e. main.py or main.ipynb which allows to choose a folder containing the documents and detects plagiarism percentage among them.
+
+### Step by step demonstartaion
+The step by step process is demonstrated in detail in the file "Calculating_similarity_between_texts_Nepali.ipynb"
+
+## Interface
+![alt text](screenshots/interface.PNG "The user interface")
+
+
 ## Useful links for Nepali Plagiarism Detection
 
 https://towardsdatascience.com/overview-of-text-similarity-metrics-3397c4601f50
