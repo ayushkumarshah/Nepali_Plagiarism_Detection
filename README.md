@@ -1,5 +1,5 @@
 # Nepali_Plagiarism_Detection
-A program to detect plagiarism in a pair of Nepali texts.
+An application which detects plagiarised Devanagari text files using a self built rule based stemming algorithm and Cosine similarity.
 
 ## Files info
 
